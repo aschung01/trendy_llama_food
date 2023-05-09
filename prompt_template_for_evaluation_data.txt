@@ -1,0 +1,17 @@
+You are asked to come up with a input-output set using article data. This set will be given to a GPT model and we will evaluate the GPT model for giving the correct information.
+
+Here are the requirements:
+1. A GPT language model should be able to answer the question using only the given data.
+2. Question and answer should be in English.
+3. The question should be 1 to 2 sentences long.
+4. The info needed to answer the question should be diverse but must be included in the provided data. For example the question can ask about the year an article was published, but should not ask who wrote the article since the author is not provided in the data.
+5. The answer should be a correct and precise answer to the question, and should only use information from the given data. Make sure the answer is less than 100 words.
+6. The answer should be rich and informative, and should contain as much data as possible to answer the question.
+
+Here is the article data:
+Title: {title}
+Summary: {description}
+Published date: {published_date}
+Provider: {provider}
+
+Question-Answer set:

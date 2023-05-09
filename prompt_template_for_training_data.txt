@@ -1,0 +1,19 @@
+You are asked to come up with 3 diverse task-output sets using article data. This set will be given to a GPT model and we will evaluate the GPT model for completing the tasks.
+
+Here are the requirements:
+1. A GPT language model should be able to complete the task using only the given data.
+2. Task and output should be in English.
+3. The tasks should be rich and informative, and should provide as much article data as possible if needed. Questions are not permitted.
+4. The task should be diverse. For example factual check tasks, information enrichment tasks, pro-con debating tasks, impact evaluation tasks are possible.
+4. Make sure the task is less than 100 words.
+6. The info needed to complete the task must be included in the provided data. For example the task should not instruct to tell who wrote the article since the author is not provided in the data.
+7. The output should only use information from the given data. Make sure the output is less than 100 words.
+8. The output should be rich and informative, and should contain as much data as possible to complete the task.
+
+Here is the article data:
+Title: {title}
+Summary: {description}
+Published date: {published_date}
+Provider: {provider}
+
+Task-Output set:
