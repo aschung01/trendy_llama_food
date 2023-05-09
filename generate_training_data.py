@@ -79,10 +79,10 @@ def generate_training_data(total_pages: int, output_dir="./"):
         page += 1
         progress_bar.update(1)
 
-    for raw_data in raw_generated_data:
-        training_data.append(process_output(raw_data))
+        for raw_data in raw_generated_data:
+            training_data.append(process_output(raw_data))
 
-    utils.jdump(training_data, os.path.join(output_dir, "trendy_llama_food.json"))
+        utils.jdump(training_data, os.path.join(output_dir, "trendy_llama_food.json"))
 
     request_duration = time.time() - request_start
 
