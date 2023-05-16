@@ -4,11 +4,15 @@ Bing news API integration
 
 import os
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 SEARCH_TERM = "Microsoft"
 SEARCH_URL = "https://api.bing.microsoft.com/v7.0/news/search"
 
 req_headers = {"Ocp-Apim-Subscription-Key": os.environ["BING_NEWS_SUBSCRIPTION_KEY"]}
+
 
 def get_news(page):
     """Get news from Bing News API."""
