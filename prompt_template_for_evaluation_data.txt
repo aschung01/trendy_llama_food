@@ -1,4 +1,4 @@
-You are asked to come up with a input-output set using article data. This set will be given to a GPT model and we will evaluate the GPT model for giving the correct information.
+You are asked to come up with 3 input-output sets using article data. These sets will be given to a GPT model and we will evaluate the GPT model for giving the correct information.
 
 Here are the requirements:
 1. A GPT language model should be able to answer the question using only the given data.

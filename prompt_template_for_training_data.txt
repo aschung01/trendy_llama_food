@@ -1,4 +1,4 @@
-You are asked to come up with 3 diverse task-output sets using article data. This set will be given to a GPT model and we will evaluate the GPT model for completing the tasks.
+You are asked to come up with 5 diverse task-output sets using article data. This set will be given to a GPT model and we will evaluate the GPT model for completing the tasks.
 
 Here are the requirements:
 1. A GPT language model should be able to complete the task using only the given data.

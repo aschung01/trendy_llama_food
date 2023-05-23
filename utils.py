@@ -2,12 +2,20 @@ import io
 import json
 import os
 
+
 def jload(f, mode="r"):
     """Load a .json file into a dictionary."""
     f = _make_r_io_base(f, mode)
     jdict = json.load(f)
     f.close()
     return jdict
+
+
+def load_jsonl(filename: str) -> list:
+    """Load a .jsonl file into a list."""
+    with open(filename, "r") as f:
+        return [json.loads(line) for line in f]
+
 
 def _make_w_io_base(f, mode: str):
     if not isinstance(f, io.IOBase):
@@ -17,10 +25,12 @@ def _make_w_io_base(f, mode: str):
         f = open(f, mode=mode)
     return f
 
+
 def _make_r_io_base(f, mode: str):
     if not isinstance(f, io.IOBase):
         f = open(f, mode=mode)
     return f
+
 
 def jdump(obj, f, mode="w", indent=4, default=str):
     """Dump a str or dictionary to a file in json format.
@@ -40,7 +50,7 @@ def jdump(obj, f, mode="w", indent=4, default=str):
     else:
         raise ValueError(f"Unexpected type: {type(obj)}")
     f.close()
-    
+
 
 def append_to_jsonl(data, filename: str) -> None:
     """Append a json payload to the end of a jsonl file."""

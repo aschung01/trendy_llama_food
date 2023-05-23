@@ -20,7 +20,7 @@ Example command to call script:
 python api_request_parallel_processor.py \
   --requests_filepath examples/data/example_requests_to_parallel_process.jsonl \
   --save_filepath examples/data/example_requests_to_parallel_process_results.jsonl \
-  --request_url https://api.openai.com/v1/embeddings \
+  --request_url https://api.openai.com/v1/chat/completions \
   --max_requests_per_minute 1500 \
   --max_tokens_per_minute 90000 \
   --token_encoding_name cl100k_base \
